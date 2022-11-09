@@ -1,21 +1,21 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 5,
+        "line": 23,
         "name": "User should be able to login with valid credentials and open a new account",
         "description": "",
-        "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials-and-open-a-new-account",
+        "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials-and-open-a-new-account;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2696688700,
+              "duration": 3509666700,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "User is on the techfios login page",
             "match": {
               "location": "Stepsdefination.user_is_on_the_techfios_login_page()"
@@ -24,58 +24,78 @@
           },
           {
             "result": {
-              "duration": 3109901500,
+              "duration": 267852100,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User enters the username \"demo@techfios.com\"",
+            "line": 6,
+            "name": "User enters the \"demo@techfios.com\" in \"UserName\" field",
             "match": {
               "arguments": [
                 {
                   "val": "demo@techfios.com",
-                  "offset": 26
+                  "offset": 17
+                },
+                {
+                  "val": "UserName",
+                  "offset": 40
                 }
               ],
-              "location": "Stepsdefination.user_enters_the_username(String)"
+              "location": "Stepsdefination.user_enters_the_in_field(String,String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3080102800,
+              "duration": 154325200,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User enters the password\"abc123\"",
+            "line": 7,
+            "name": "User enters the \"abc123\" in \"PassWord\" field",
             "match": {
               "arguments": [
                 {
                   "val": "abc123",
-                  "offset": 25
+                  "offset": 17
+                },
+                {
+                  "val": "PassWord",
+                  "offset": 29
                 }
               ],
-              "location": "Stepsdefination.user_enters_the_password(String)"
+              "location": "Stepsdefination.user_enters_the_in_field(String,String)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4030889600,
+              "duration": 1616462500,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User clicks on login",
+            "line": 8,
+            "name": "User clicks on \"\u003clogin\u003e\"",
             "match": {
-              "location": "Stepsdefination.user_clicks_on_login()"
+              "arguments": [
+                {
+                  "val": "\u003clogin\u003e",
+                  "offset": 16
+                }
+              ],
+              "location": "Stepsdefination.user_clicks_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 8196600,
+              "duration": 44107300,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User should land on Dashboard page",
             "match": {
               "location": "Stepsdefination.user_should_land_on_Dashboard_page()"
@@ -84,193 +104,31 @@
           },
           {
             "result": {
-              "duration": 54477300,
+              "duration": 616886000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "User clicks on bankCash",
-            "match": {
-              "location": "Stepsdefination.user_clicks_on_bankCash()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 289665200,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User clicks on newAccount",
-            "match": {
-              "location": "Stepsdefination.user_clicks_on_newAccount()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 81627700,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User enters \"\u003caccountTitle\u003e\" in accounts page",
+            "line": 10,
+            "name": "User clicks on \"\u003cbankCash\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\u003caccountTitle\u003e",
-                  "offset": 13
-                }
-              ],
-              "location": "Stepsdefination.user_enters_in_accounts_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 79872300,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User enters description\"\u003cdescription\u003e\" in accounts page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u003cdescription\u003e",
-                  "offset": 24
-                }
-              ],
-              "location": "Stepsdefination.user_enters_description_in_accounts_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 85593200,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User enters initialBalance\"\u003cinitialBalance\u003e\" in accounts page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u003cinitialBalance\u003e",
-                  "offset": 27
-                }
-              ],
-              "location": "Stepsdefination.user_enters_initialBalance_in_accounts_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 71047000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User enters accountNumber\"\u003caccountNumber\u003e\" in accounts page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u003caccountNumber\u003e",
-                  "offset": 26
-                }
-              ],
-              "location": "Stepsdefination.user_enters_accountNumber_in_accounts_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 74769800,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User enters contactPerson\"\u003ccontactPerson\u003e\" in accounts page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u003ccontactPerson\u003e",
-                  "offset": 26
-                }
-              ],
-              "location": "Stepsdefination.user_enters_contactPerson_in_accounts_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 78258300,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User enters Phone\"\u003c\u003e\" in accounts page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u003c\u003e",
-                  "offset": 18
-                }
-              ],
-              "location": "Stepsdefination.user_enters_Phone_in_accounts_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 83795300,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User enters internetBankingURL\"\u003cinternetBankingURL\u003e\" in accounts page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u003cinternetBankingURL\u003e",
-                  "offset": 31
-                }
-              ],
-              "location": "Stepsdefination.user_enters_internetBankingURL_in_accounts_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 507446700,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User clicks on \"\u003cnewAccount\u003e\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u003cnewAccount\u003e",
+                  "val": "\u003cbankCash\u003e",
                   "offset": 16
                 }
               ],
               "location": "Stepsdefination.user_clicks_on(String)"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 728458500,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User should be able to validate account created successfully",
-            "match": {
-              "location": "Stepsdefination.user_should_be_able_to_validate_account_created_successfully()"
-            },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 4,
-            "name": "@Scenari01"
+            "line": 3,
+            "name": "@Smoke"
           },
           {
-            "line": 4,
-            "name": "@Smoke"
+            "line": 3,
+            "name": "@Scenari01"
           }
         ]
       }
@@ -279,12 +137,6 @@
     "description": "",
     "id": "techfios-bank-and-cash-new-account-functionality",
     "keyword": "Feature",
-    "uri": "features/TichFiosBankAndCashAcc.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@Regression"
-      }
-    ]
+    "uri": "features/TichFiosBankAndCashAcc.feature"
   }
 ]

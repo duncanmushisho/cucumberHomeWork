@@ -14,36 +14,25 @@ public class LoginPage {
 	}
 
 	@FindBy(how = How.XPATH, using = "//*[@id=\"username\"]")
-	WebElement username;
+	WebElement usernameElement;
 	@FindBy(how = How.XPATH, using = "//*[@id=\"password\"]")
-	WebElement password;
+	WebElement passwordElement;
 	@FindBy(how = How.XPATH, using = "/html/body/div/div/div/form/div[3]/button")
 	WebElement loginButton;
 	
-	public void enterUserName(String userName) {
-		username.sendKeys(userName);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	public void enterUserName(String username) {
+		System.out.println("From login Page:"+username);
+		usernameElement.sendKeys(username);
+		
 	}
 	
-	public void enterPassword(String passWord) {
-		password.sendKeys(passWord);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	public void enterPassword(String password) {
+		passwordElement.sendKeys(password);
+		
 	}
 	public void clickOnLoginButton() {
 		loginButton.click();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		
 	}
 	public String getPageTitle() {
 		return driver.getTitle();

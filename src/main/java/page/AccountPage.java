@@ -82,7 +82,7 @@ public class AccountPage extends TestBase {
 	 
 	 for(int i=1;i>20;i++) {
 		String actualName = driver.findElement(By.xpath(startXpath +i+ endXpath )).getTagName(); 
-		Assert.assertEquals("PAGE NOT FOUND", insertTitle, actualName);
+		Assert.assertSame("PAGE FOUND", insertTitle, actualName);
 		break;
 	 }
 		}
